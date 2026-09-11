@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Login | University Portal</title><link rel="stylesheet" href="css/style.css"></head>
+<body class="auth-page">
+<div class="auth-shell">
+  <a class="brand auth-brand" href="index.html"><span class="brand-mark">U</span><span><strong>University</strong><small>Enrollment Portal</small></span></a>
+  <div class="auth-card">
+    <div class="auth-heading"><span class="eyebrow">WELCOME BACK</span><h1>Sign in to your account</h1><p>Use your student or administrator credentials.</p></div>
+    <form id="loginForm" novalidate>
+      <label>Student ID / Username<input id="loginIdentifier" type="text" placeholder="e.g. 2026-0001 or admin" required></label>
+      <label>Password<div class="password-wrap"><input id="loginPassword" type="password" placeholder="Enter your password" required><button type="button" class="password-toggle" data-target="loginPassword">Show</button></div></label>
+      <div class="form-row between"><label class="checkbox"><input id="rememberMe" type="checkbox"> Remember me</label><button type="button" class="text-btn" id="forgotPassword">Forgot password?</button></div>
+      <div id="loginError" class="form-message error hidden"></div>
+      <button class="btn btn-primary btn-full" type="submit">Sign In</button>
+    </form>
+    <p class="auth-bottom">Don't have an account? <a href="register.html">Create one</a></p>
+    <div class="demo-box"><strong>Demo accounts</strong><span>Admin: <code>admin</code> / <code>admin123</code></span><span>Student: <code>2026-0001</code> / <code>student123</code></span></div>
+  </div>
+</div>
+<script src="js/auth.js"></script></body></html>
