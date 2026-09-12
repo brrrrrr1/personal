@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Aside Start -->
+        <aside>
+            <!-- top start -->
+           <div class="top">
+            <div class="logo">
+                <h2>DOr<span class = "primary">SU</span></h2>
+            </div>
+            <div class="close" id="close_btn">
+                <span class="material-symbols-sharp"> close </span>
+            </div>
+           </div>
+           <!-- top end -->
+           <!-- navigation -->
+           <div class="sidebar" id="nav-menu">
+                <ul class="nav-list">
+                    <li>
+                    <a href="#" class="nav_link">
+                        <span class="material-symbols-sharp"> grid_view </span>
+                        <h3>DashBoard</h3>
+                    </a>
+                    </li>
+                    <li class="dropdown">
+                        <div class="nav_link">
+                           <a href="#" class="nav_link">
+                                <span class="material-symbols-sharp"> menu_book </span>
+                                <h3>Course Management</h3>
+                                <span class="material-symbols-sharp">arrow_drop_down</span>
+                            </a>
+
+                            <ul class="dropdown_menu">
+                                <li>
+                                    <a href="#" class="dropdown_link">
+                                        <h3>Information Technology</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown_link">
+                                        <h3>Bachelor of Science in Business Administration</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown_link">
+                                        <h3>Bachelor of Science in Agriculture</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown_link">
+                                        <h3>Bachelor of Technology and Livelihood Education</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <div class="nav_link">
+                           <a href="#" class="nav_link">
+                                <span class="material-symbols-sharp"> school </span>
+                                <h3>Student Management</h3>
+                                <span class="material-symbols-sharp">arrow_drop_down</span>
+                            </a>
+
+                            <ul class="dropdown_menu">
+                                <li>
+                                    <a href="#" class="dropdown_link">
+                                        <span class="material-symbols-sharp"> group </span>
+                                        <h3>BSIT Students</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown_link">
+                                        <span class="material-symbols-sharp"> group </span>
+                                        <h3>BSBA Students</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown_link">
+                                        <span class="material-symbols-sharp"> group </span>
+                                        <h3>BSA Students</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown_link">
+                                        <span class="material-symbols-sharp"> group </span>
+                                        <h3>BTLED Students</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="enroll.html" class="nav_link">
+                            <span class="material-symbols-sharp"> person_add </span>
+                            <h3>Enroll Student</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="manageinstructors.html" class="nav_link">
+                            <span class="material-symbols-sharp"> manage_accounts </span>
+                            <h3>Manage Instructors</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="changePassword.html" class="nav_link">
+                            <span class="material-symbols-sharp"> settings </span>
+                            <h3>Change Password</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <span class="material-symbols-sharp"> logout </span>
+                            <h3>Logout</h3>
+                        </a>
+                    </li>                    
+                </ul>
+           </div>
+           <!-- end of navigation -->
+        </aside>
+        <!-- Aside End -->
+
+        <!-- Main Start -->
+        <main>
+           <h1>Dashboard</h1>
+
+           <div class="date">
+            <input type="date">
+           </div>
+           <!-- Start Insights -->
+           <div class="insights">
+
+            <!-- Start TotalStudents -->
+             <div class="total-students">
+                <span class="material-symbols-sharp">grouped_bar_chart</span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Total Students</h3>
+                        <h1>2,400</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle r="30" cy="40" cx="40"></circle>
+                        </svg>
+                        <div class="number">+156</div>
+                    </div>   
+                </div>
+             </div>
+             <!-- end TotalStudents -->
+
+             <!-- Start Faculty -->
+             <div class="faculty">
+                <span class="material-symbols-sharp">groups</span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Total Instructors</h3>
+                        <h1>489</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle r="30" cy="40" cx="40"></circle>
+                        </svg>
+                        <div class="number">+2</div>
+                    </div>   
+                </div>
+             </div>
+             <!-- end Faculty -->
+
+             <!-- Start ActiveStudents -->
+             <div class="active-students">
+                <span class="material-symbols-sharp">sync_saved_locally</span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Active Students</h3>
+                        <h1>2389</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle r="30" cy="40" cx="40"></circle>
+                        </svg>
+                        <div class="number">+152</div>
+                    </div>   
+                </div>
+             </div>
+             <!-- end ActiveStudents -->
+           </div>
+           <!-- End Insights -->
+
+           <!-- Start Display -->
+            <div class="display">
+                <h1>Students</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>StudentID</th>
+                            <th>Firstname</th>
+                            <th>Middlename</th>
+                            <th>Lastname</th>
+                            <th>Course</th>
+                            <th>Year</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024-0001</td>
+                            <td>Dale Philip</td>
+                            <td>Dalagan</td>
+                            <td>Banzon</td>
+                            <td>BSIT</td>
+                            <td>2</td>
+                            <td class="success">Active</td>
+                            <td>
+                                <a href="edit.html" class="primary">Edit</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024-0002</td>
+                            <td>Maryjoy</td>
+                            <td>N/A</td>
+                            <td>Apolinar</td>
+                            <td>BTLED</td>
+                            <td>1</td>
+                            <td class="danger">Inactive</td>
+                            <td>
+                                <a href="edit.html" class="primary">Edit</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024-0003</td>
+                            <td>Jessel</td>
+                            <td>N/A</td>
+                            <td>Lapay</td>
+                            <td>BSBA</td>
+                            <td>3</td>
+                            <td class="success">Active</td>
+                            <td>
+                                <a href="edit.html" class="primary">Edit</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024-0004</td>
+                            <td>James Kevin</td>
+                            <td>N/A</td>
+                            <td>Mahilum</td>
+                            <td>BSA</td>
+                            <td>4</td>
+                            <td class="danger">Inactive</td>
+                            <td>
+                                <a href="edit.html" class="primary">Edit</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024-0005</td>
+                            <td>Rachel</td>
+                            <td>Basiles</td>
+                            <td>Dignos</td>
+                            <td>BSIT</td>
+                            <td>2</td>
+                            <td class="success">Active</td>
+                            <td>
+                                <a href="edit.html" class="primary">Edit</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- End Display -->
+        </main>
+        <!-- Main end -->
+
+        <!-- Right Start Section -->
+        <div class="right">
+            <div class="top">
+                <button id="menu_bar">
+                    <span class="material-symbols-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span  class="material-symbols-sharp active">light_mode</span>
+                    <span  class="material-symbols-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p><b>Phil</b></p>
+                        <p>Admin</p>
+                        <small class="text-muted"></small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="assets/images/profile.jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <!-- end top -->
+
+            <!-- Start Recent Updates -->
+         <div class="recent_updates">
+            <h2>Recent Updates</h2>
+            <div class="updates">
+                <div class="update">
+                    <div class="profile-photo">
+                        <span class="material-symbols-sharp">account_circle</span>
+                    </div>
+                    <div class="message">
+                        <p><b>Phil</b> Enrolled a student</p>
+                    </div>
+                </div>
+                <div class="update">
+                    <div class="profile-photo">
+                        <span class="material-symbols-sharp">account_circle</span>
+                    </div>
+                    <div class="message">
+                        <p><b>Phil</b> Enrolled a student</p>
+                    </div>
+                </div>
+                <div class="update">
+                    <div class="profile-photo">
+                        <span class="material-symbols-sharp">account_circle</span>
+                    </div>
+                    <div class="message">
+                        <p><b>Phil</b> Enrolled a student</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- End Recent Updates -->
+        </div>
+        <!-- Right End Section -->
+    </div>
+
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
